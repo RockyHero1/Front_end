@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Flats</title>
+	<link href="home.css" rel="stylesheet" type='text/css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:30px;
+  background-color:#777;
+  color:white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+</style>
+<script>
+	function one(){
+		document.getElementById('imagi').src="House.jpg";
+		}
+	function two(){
+		document.getElementById('imagi').src="Banglow.png";
+		}
+	function three(){
+		document.getElementById('imagi').src="Flat.jpg";
+		}
+	function four(){
+		document.getElementById('imagi').src="Office.jpg";
+		}
+	function defaults(){
+		document.getElementById('imagi').src="Word.png";
+		}
+	function light(){
+		document.getElementById('dull').style.opacity="0";
+		document.getElementById('dull').style.transition="0.6s";
+		}
+	function dark(){
+		document.getElementById('dull').style.opacity="1";
+	}
+</script>
+</head>
+
+<body>
+
+<header>
+	<div class="header-wrap">
+	<a href=".\Home.html"><img src=".\Logo.jpeg" /></a>
+	<nav>
+		<ul class="left">
+			
+			<li class="shop"><a href="" >Shop</a>
+				<ul class="shopping" >
+					<li class="furniture" onmouseover="light()" onmouseleave="dark()"><a href="">Furniture</a>
+						<div class="front">
+							<div class="front-three">
+								<img src=".\Big_Images\Furniture_junction.jpg"/>
+							</div>
+							<div class="front-three">
+								<div class="front-one" onmouseover="one()" onmouseleave="defaults()"><a href=".\House.html">House</a></div>
+								<div class="front-one" onmouseover="two()" onmouseleave="defaults()"><a href=".\Bungalow.html">Bungalow</a></div>
+								<div class="front-one" onmouseover="three()" onmouseleave="defaults()"><a href=".\Flat.html">Flat</a></div>
+								<div class="front-one" onmouseover="four()" onmouseleave="defaults()"><a href=".\Office.html">Office</a></div>
+							</div>
+							<div class="front-three">
+								<img id="imagi"  src=".\Word.png" />
+							</div>
+						</div>
+					</li>
+					<li><a href=".\Alluminium.html">Alluminium</a></li>
+					<li><a href=".\PVC.html">PVC</a></li>
+					<li><a href="">Automation</a></li>
+				</ul>
+			</li>
+			<li><a href=".\AboutUs.html">Why Us</a></li>
+			<li><a href=".\Login.html">&nbsp&nbsp&nbsp&nbsp Login &nbsp&nbsp&nbsp&nbsp</a></li>
+			<li><a href=".\Contacting.html">Contact Us</a></li>
+		</ul>
+		<ul class="right">
+			<li><a href="" name="search"><i class="fa fa-search" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:32px;"></i></a></li>
+			<li><a href="" name="cart"><i class="fa fa-cart-arrow-down" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:36px;"></i></a></li>
+			<li><a href="" name="heart"><i class="fa fa-heart" style="background-color:rgb(41,45,49); color:red; font-size:21px;"></i></a></li>
+			<p name="sign-out">Sign Out</p>
+		</ul>
+	</nav>
+	</div>
+</header>
+
+<content>
+	<div class="house-content">
+		<div class="house-content-wrap" id="dull">
+		<div id="h-h3"><h3><span>A</span>ppartment  &nbsp&nbsp<span>F</span>urnish</h3></div>
+			
+			<div class="parts" id="dull">
+				<div class="upper">
+					<img src=".\Flats\1.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Television Selves Set</h5><span>Rs. 65000</span>
+					<p>Mirror Cut Television Set With Storage</p>
+				</div>
+			</div>
+			<div class="parts" id="dull">
+				<div class="upper">
+					<img src=".\Flats\2.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Aligned Television Self</h5><span>Rs. 54000</span>
+					<p>Horizontally Aligned Book Self</p>
+				</div>
+			</div>
+			<div class="parts" id="dull">
+				<div class="upper">
+					<img src=".\Flats\3.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Compacted Set</h5><span>Rs. 58000</span>
+					<p>Uniquely Designed for Small Appartments</p>
+				</div>
+			</div>
+			<div class="parts">
+				<div class="upper">
+					<img src=".\Flats\4.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Living Space</h5><span>Rs. 128,500</span>
+					<p>American Space of Living</p>
+				</div>
+			</div>
+			<div class="parts">
+				<div class="upper">
+					<img src=".\Flats\5.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Sofa Set</h5><span>Rs. 22500</span>
+					<p>Italian Collection</p>
+				</div>
+			</div>
+			<div class="parts">
+				<div class="upper">
+					<img src=".\Flats\6.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Modular Kitchen</h5><span>Rs. 100,000</span>
+					<p>Kitchen Set Involving Cupboards to Drawers</p>
+				</div>
+			</div>
+			<div class="parts">
+				<div class="upper">
+					<img src=".\Flats\7.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Single Class</h5><span>Rs. 230,900</span>
+					<p>Unique Design For Single Space</p>
+				</div>
+			</div>
+			<div class="parts">
+				<div class="upper">
+					<img src=".\Flats\8.jpg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>VerMont Material</h5><span>Rs. 520,000</span>
+					<p>Vermont Material For High Satisfaction </p>
+				</div>
+			</div>
+			<div class="parts">
+				<div class="upper">
+					<img src=".\Flats\9.jpeg" alt="" />
+					<div class="cart">
+						<button name="Add">ADD TO BAG</button>
+						<button name="Wish">WISHLIST</button>
+					</div>
+				</div>
+				<div class="bottom">
+					<h5>Space Utilization</h5><span>Rs. 230,000</span>
+					<p>Foldable And Scrollable Material</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</content>	
+
+<footer>
+	<div class="triple">
+		<h3>CUSTOMER SUPPORT</h3>
+		<p>Let us help you find what you're looking for</p>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>HELP</span></a>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>FAQ</span></a>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>CONTACT</span></a>
+	</div>
+	
+	<div class="triple">
+		<h3>SIGN ME UP</h3>
+		<p>Join the EAGLE Nation</p>
+		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+				<div class="form-group">
+					<input type="email" placeholder="Email Address" name="mail">
+					<input type="submit" onmouseover="style='color:red;'" onmouseleave="style='color:white';">
+				</div>
+		</form>
+	</div>
+	
+	<div class="triple">
+		<h3>FOLLOW US</h3>
+		
+		<div class="triple-wrap">
+			<div class="five"><a href="https://www.facebook.com/roshan.jangid.963" class="fa fa-facebook"></a></div>
+			<div class="five"><a href="#" class="fa fa-skype"></a></div>
+			<div class="five"><a href="#" class="fa fa-instagram"></a></div>
+			<div class="five"><a href="#" class="fa fa-linkedin"></a></div>
+			<div class="five"><a href="https://twitter.com/RoshanJangid16" class="fa fa-twitter"></a></div>
+			<!--change from here<div class="five"><a href=""><img src=".\Images\fb.png" alt="facebook"/></a></div>-->
+			
+		</div>
+	</div>
+	
+</footer>
+</body>
+</html>

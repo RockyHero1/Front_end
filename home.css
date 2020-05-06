@@ -1,0 +1,140 @@
+* { box-sizing:border-box;}
+body { padding:0px; margin:0px; font-family:arial; font-size:12px; color:#333; font-family: 'Lato', sans-serif; background:#fff;  width:100%; }
+
+/*Header*/
+header { width:100%; height:auto; float:left; margin:0px; padding:1.5% 0px 0px; background-color:rgb(41,45,49); color:white; }
+header .header-wrap { width:98%; height:auto; margin:0px auto; padding:0px 0px 0.8% 0px; border-top:0.07px solid #666;	 border-bottom:0.07px solid #666;}
+.header-wrap nav { color:white; margin:-0.3%; padding:0px; width:100%;height:6.67em; } 
+
+.header-wrap img {float:left; width:auto; height:12.8em; margin:0px; padding:0px; z-index:800; position:relative; }
+nav ul.left { float:left; margin:0px; padding:0px; list-style:none; position:relative; z-index:800; }
+nav ul.left li{ float:left; margin:0px; padding:0px; list-style:none; }
+nav ul.left li:hover { float:left; margin:0px; padding:0px; list-style:none;background-color:rgb(0,38,62);}
+
+nav ul.right { float:right; margin:0px; padding:0%;}
+nav ul.right li {float:left; margin:0px; padding:0%; list-style:none; border:none;}
+ul.left>li a {text-decoration:none; color:white; margin:0px; padding:1.52em; font-size:1.65em; font-weight:450;   border-right:0.07px solid #666; display:inline-block;}
+ul.right li a {text-decoration:none; color:white; margin:0px; padding:1.52em; font-size:20px; font-weight:450; line-height:4em;} 
+
+li.shop:hover ul{ display:inline-block;  }
+ul.shopping { display: none; top:7em;left:0%; margin:0%; padding:0em; list-style:none; position:absolute; background-color:rgb(0,38,62); transition:height 1s;}
+.shopping li {float:left; margin:0px; padding:0px; list-style:none; }
+ul.shopping li> a {text-decoration:none; color:white; margin:0px; padding:1.4em; font-size:20px; font-weight:450; height:3.5em; border-right:0.07px solid #666; }
+ul.shopping li> a:hover {text-decoration:none; color:white; margin:0px; padding:1.4em; font-size:20px; font-weight:450; height:3.5em; border-right:0.07px solid #666; background-color:rgb(0,38,62); border-bottom:3px solid white;}
+ul.shopping li:hover { margin:0px; padding:0px; list-style:none;float:left; color:white;}
+
+nav ul.right p { position:absolute; top:18%; right:2%; color:#bbb;}
+nav ul.right p:hover { color:#eee; cursor:pointer; }
+
+/*Furniture*/
+.furniture:hover .front {display:inline-block; float:left; width:113.5em; height:24.5em; background-color:rgb(0,38,62);; color:white; margin:0px; padding:0px; top:100%; left:-31.7%; position:absolute; transition:height 0.5s;}
+.furniture .front {display:none; }
+.front-three { float:left; width:33%; margin:0px; padding:0px; text-align:center; height:24.4em; border-right:0.7px solid #999; }
+.front-three:nth-child(2) { float:left; width:33%; margin:0px; padding:20px; text-align:center; height:24.4em; border-right:0.7px solid #999; }
+
+.front-three img {width:90%; height:21.5em; margin:1.5em; padding:0em; }
+.front-three div.front-one {width:90%;height:5em; margin:0px; padding:0em; }
+.front-three div.front-one a { margin:0em 4em; width:220px; line-height:42px; padding:0.5em; font-size:22px; font-weight:400; border-radius:20px;}
+.front-three div.front-one a:hover { margin:0em 4em; width:220px; line-height:42px; padding:0.5em; font-size:22px; font-weight:400; border-radius:20px; background-color:blue;}
+/*.front-three p a { margin:0px; padding:0px; text-decoration:none; border:none; }
+
+/*Content*/
+content { width:100%; float:left; height:auto; margin:0px; padding:0px; background-color:rgb(82,81,82); }
+content .content-wrap { width:100%; height:auto; margin:0px; height:auto; padding:20px; text-align:center; }
+.content-wrap img { width:86%; margin:0.5em; padding:0em; height:38em; box-shadow:0px 0px 7px 3px #888; transition:0.5s; }
+.content-wrap>img:first-child { width:86%; margin:8em 0em -6em; padding:0px; height:38em; box-shadow:0px 0px 7px 3px #888; transition:0.5s; z-index:0; position:relative;top:-90px; }
+
+.content-wrap img:{ width:92%; padding:0px; height:38em; box-shadow:0px 0px 7px 3px #aaa; transition:0.5s;}
+
+.content-wrap .in_content { width:86%; height:42em; border-radius:0.7px solid #999; margin:0em auto; padding:0em; }
+.in_content  img {float:left; width:43em; margin:1em 1.5em; padding:0px; height:38em;}
+.in_content  img:hover {float:left; width:43em; margin:1em 1.55em; padding:0px; height:38em;}
+
+/*Footer*/
+footer { float:left; width:100%; height:21em; margin:0px; padding:0px; background-color:rgb(41,45,49); border:0.1px solid #666;}
+footer .triple {float:left; width:33%; height:21em; margin:0px; padding:3.1em 2.25em; text-align:center; color:white; border-right:0.07px solid #666;}
+footer .triple:last-child {float:left; width:33%; height:21em; margin:0px; padding:3.1em 2.25em; text-align:center; color:white; border-right:none;}
+.triple span { font-weight:450; font-size:18px; margin:0.5em 1.25em; padding:1em 0em; color:white; position:relative; top:1em;}
+.triple h3 { color:white; font-size:17px; font-weight:400; margin:1em; padding:0em; }
+
+form .form-group { width:100%; height:54px; margin:0em 0em 1em 0em; padding:0.75em; text-align:center; border:0.05px solid #666; }
+form .form-group input:first-child { float:left; font-size:14px; margin:0.55em 0.5em 0em 0em; font-family:; width:80%; outline:none; font-weight:350;}
+form .form-group input { float:left; font-size:12px; background-color:rgb(41,45,49); color:white; border:none; font-weight:bold; margin:0.55em; outline:none;}
+
+.triple .triple-wrap { width:80%; height:auto; margin:0em auto; padding:0em; }
+.triple-wrap .five {float:left; width:20%; height:auto; margin:0em; padding:0.5em }
+.five img { width:100%; height:auto; margin:0px; padding:0px; }
+
+
+/*About US*/
+body div .grey { background-color:rgb(244,244,244); widht:100%; height:auto; float:left; margin:0px; padding:0px;  }
+.body-wrap {width:90%; height:auto; margin:0px auto; padding:0px; text-align:center; background-color:rgb(244,244,244);}
+.body-wrap h2#ah2 { font-size:60px; line-height:80px; font-family:; margin:35px auto 20px; padding:0px; }
+.body-wrap p#a_first {font-size:20px; line-height:25px; margin:0px; padding:0px; }
+.body-wrap img { width:100%; height:600px; margin:1em 0em 2em; padding:0px; float:left; }
+.contents-wrap { width:70%; margin:1em auto; padding:0px;}
+.contents-wrap p { font-size:16px; font-family:; line-height:22px; margin:1.75em auto 0em; text-align:left;}
+.contents-wrap p:last-child { font-size:16px; font-family:; line-height:22px; margin:0.75em auto 1.75em; }
+
+.body-wrap .images { width:50%; height:auto; float:left; margin:0px; padding:0px; margin-bottom:1.75em; }
+.body-wrap .images img { width:100%; height:450px; float:left; margin:0px; padding:10px; }
+
+div #last_pic { width:10%; height:2em; margin:0 auto; padding:0px; }
+div #last_pic { width:10%; height:auto; margin:0 auto; padding:0px; }
+#last_pic img { width:100%; height:10%; margin:0px; padding:0px; border-radius:90px; border:2px solid #fff; }
+div #ah4{ width:70%; clear:both; height:auto; margin:0px auto; padding:0px;  text-align:center; }
+#ah4 h4{	font-size:44px; line-height:55px; font-family:BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; margin:1.75em auto 1em; padding:0px; color:rgb(0,38,62);}
+#ah4 p { color:rgb(0,38,62); font-size:18px; margin-top:2.25em; }
+
+/*House Contents*/
+content .house-content { width:100%; float:left; height:auto; margin:0em; padding:0em; background-color:#999; text-align:center;}
+.house-content .house-content-wrap { width:85%; margin:-0.5em auto; padding:0em; height:110em; background-color:#fff; text-align:center; }
+.house-content-wrap #h-h3 h3{ font-size:78px; font-family:"Edwardian Script ITC","Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans"; color:#555; border-bottom:3px groove rgb(139,96,192); margin:0.5em;}
+.house-content-wrap #h-h3 span { font-size:1.2em; font-family:"Ubuntu", "Cantarell","Helvetica Neue","timesnwewroman"; color:#111; margin:auto; padding:auto; font-style:italic; letter-spacing:-0.1em;} 
+.house-content-wrap .parts { width:30%; float:left; margin:1.6%; padding:0%; height:29em; background-color:#fff; }
+.house-content-wrap .parts img { width:100%; height:23em; z-index:0; }
+.house-content-wrap .parts .cart { display:none; width:100%;height:3em; background-color:#fff; position:relative; top:-3em; z-index:50;}
+.house-content-wrap .parts:hover .cart { display:inline-block ; }
+.house-content-wrap .parts:hover { box-shadow:0px 0px 7px 6px rgb(40,60,62); width:30%; transition:0.5s;}
+.house-content-wrap .parts .cart button { padding:0.3em 0.75em; margin:0.6em 2.2em; font-size:14px; line-height:14px; color:white; background-color:tomato; float:left; outline:none; }
+.house-content-wrap .parts .cart button:hover { padding:0.3em 0.75em; margin:0.6em 2.2em; font-size:14px; line-height:14px; color:white; background-color:#222; float:left; cursor:pointer;}
+
+.house-content-wrap .parts .bottom { width:100%; height:auto; position:relative; top:0em; left:0em; } 
+.house-content-wrap .parts .bottom h5 { font-size:20px; line-height:1.1em; margin:0.45em; padding:0em; width:100%; text-align:left;}
+.house-content-wrap .parts .bottom p { font-size:16px; line-height:1.2em; margin:0.2em 0.2em 0.2em 0.5em; padding:0em; text-align:left; }
+.house-content-wrap .parts .bottom span { font-size:18px; line-height:1.2em; margin:0.5em; padding:0em; width:100%; float:right; position:absolute; top:-0.5em; left:6.2em;
+	font-weight:555;}
+
+.house-content-wrap .parts:hover h5 { font-size:20px; line-height:1.1em; margin:0.5em; padding:0em; width:100%; z-index:100; position:absolute; top:-2.13em; left:0em;}
+.house-content-wrap .parts:hover span { font-size:18px; line-height:1.2em; margin:0.5em; padding:0em; width:100%; float:right; position:absolute; top:-2.3em; left:6.2em;}
+
+/*Alluminium*/
+content .No-wrap { width:100%; height:92em; margin:0px; padding:0px; text-align:center;}
+.No-wrap .no-wrap-image { width:80%; height:37.5em; margin:1.2em auto; padding:0em;  position:relative; background-color:#fff; clear:both;}
+.No-wrap .no-wrap-image img { width:100%; height:37.5em; margin:0em; padding:0em; z-index:0; opacity:0.7; }
+
+.no-wrap-image .partition { width:28%; height:95%; position:absolute; background-color:#111; opacity:0.8; top:2%; left:0%; color:#fff;}
+.no-wrap-image h6 { position:absolute; top:25%; width:100%; margin:0em auto; padding:0em; z-index:5; font-size:48px; } 
+.no-wrap-image span {display:block; position:absolute; top:70%; width:70%;left:14%; margin:0em auto; padding:0em; z-index:25; font-size:20px; background-color:#fff; color:#333; box-shadow:0px 0px 6px 10px #fff; opacity:1;}
+.no-wrap-image button { position:absolute; top:0%; left:86.8%; margin:0em; padding:12.8em 2.55em; opacity:0.9;} 
+.no-wrap-image button:hover { position:absolute; top:0%; left:86.8%; margin:0em; padding:12.8em 2.55em; opacity:0.9; background-color:black; color:white; } 
+
+.no-wrap-image p { display:none; position:absolute; top:40%; width:70%;left:20%; margin:0em auto; padding:0em; z-index:25; font-size:16px; color:#fff; }
+
+/*Login Page*/
+.login-wrap { width:35%; text-align:center; margin:2.5em auto; padding:0em; height:27em; background-color:#fff;}
+.login-wrap .login-left { width:70%; float:left; margin:0.7em 0em; padding:0.8em; }
+.login-wrap .login-left .login-form { width:100%; margin:6% 0.8%; padding:0em; position:relative;  background-color:#aaa;}
+.login-wrap .login-left .login-form img { width:8%; height:auto; position:absolute; top:25%; left:4%; }
+.login-left .login-form input { width:81%; margin:2% 0.2em 2% 2em; padding:0em; line-height:43px; font-size:19px; outline:none; border:none; color:#434; background-color:#aaa;}
+.login-left p { float:left; margin:0em 0.5em; 	}
+.login-left span { float:right; margin:-0.25em 0.6em 0em; }
+
+div .or { width:100%; height:auto; margin:2.9em 0.2em 1.9em; padding:0.2em; border-bottom:1px solid black; text-align:center; position:relative;}
+div .or img { width:15%; height:auto; padding:0px; margin:0.2em; top:20%; position:absolute; border-radius:20px; left:43%; background-color:#fff;}
+.login-left h2 { clear:both; float:left; margin:0em 0.4em; }
+.login-left a {color:#333; }
+
+.login-wrap .login-right {float:right; width:30%; margin:0px; padding:0px; height:100%; }
+.login-right button { width:100%; padding:1em; margin:0em; height:100%; background-color:black; color:#fff; }
+.login-right button:hover { width:100%; padding:1em; margin:0em; height:100%; background-color:#111; color:#fff; }

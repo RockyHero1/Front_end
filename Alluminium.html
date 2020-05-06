@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Alluminium</title>
+	<link href="home.css" rel="stylesheet" type='text/css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:30px;
+  background-color:#777;
+  color:white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+</style>
+<script>
+	function one(){
+		document.getElementById('imagi').src="House.jpg";
+		}
+	function two(){
+		document.getElementById('imagi').src="Banglow.png";
+		}
+	function three(){
+		document.getElementById('imagi').src="Flat.jpg";
+		}
+	function four(){
+		document.getElementById('imagi').src="Office.jpg";
+		}
+	function defaults(){
+		document.getElementById('imagi').src="Word.png";
+		}
+	function light(){
+		document.getElementById('dull').style.opacity="0";
+		}
+	function dark(){
+		document.getElementById('dull').style.opacity="1";
+		}
+	function leftside(){
+		document.getElementById('invisible').src="dark-blue.png";
+		document.getElementById('invisible').style="opacity:1";
+		
+		document.getElementById('Button').style.transition="0.5s";
+		document.getElementById('Button').style.left="0%";
+		document.getElementById('Display').style.display="initial";
+		document.getElementById('Hidden').style.display="none";
+		
+		document.getElementById('heads').style.left="2%";
+		document.getElementById('heads').style.top="15%";
+		
+		document.getElementById('pari').style.width="80%";
+		document.getElementById('pari').style.height="77%";
+		document.getElementById('pari').style.top="11%";
+		document.getElementById('pari').style.left="16%";
+		document.getElementById('pari').style.transition="0.8s";
+		}
+	function rightside(){
+		document.getElementById('invisible').src="Allum1.jpg";
+		document.getElementById('invisible').style="opacity:0.7";
+		
+		document.getElementById('Button').style.left="86.8%";
+		document.getElementById('Button').style.transition="0.8s";
+		document.getElementById('Display').style.display="none";
+		document.getElementById('Hidden').style.display="block";
+		
+		document.getElementById('heads').style.left="0%";
+		document.getElementById('heads').style.top="25%";
+		
+		document.getElementById('pari').style.width="28%";
+		document.getElementById('pari').style.height="95%";
+		document.getElementById('pari').style.top="2%";
+		document.getElementById('pari').style.left="0%";
+		document.getElementById('pari').style.transition="0.8s";
+		}
+	function lefter(){
+		document.getElementById('invisibleing').src="dark-blue.png";
+		document.getElementById('invisibleing').style="opacity:1";
+		
+		document.getElementById('Buttoning').style.transition="0.5s";
+		document.getElementById('Buttoning').style.left="0%";
+		document.getElementById('Displaying').style.display="initial";
+		document.getElementById('Hiddening').style.display="none";
+		
+		document.getElementById('heading').style.left="2%";
+		document.getElementById('heading').style.top="15%";
+		
+		document.getElementById('paring').style.width="80%";
+		document.getElementById('paring').style.height="77%";
+		document.getElementById('paring').style.top="11%";
+		document.getElementById('paring').style.left="16%";
+		document.getElementById('paring').style.transition="0.8s";
+		}
+	function righter(){
+		document.getElementById('invisibleing').src="Allum2.jpg";
+		document.getElementById('invisibleing').style="opacity:0.7";
+		
+		document.getElementById('Buttoning').style.left="86.8%";
+		document.getElementById('Buttoning').style.transition="0.8s";
+		document.getElementById('Displaying').style.display="none";
+		document.getElementById('Hiddening').style.display="block";
+		
+		document.getElementById('heading').style.left="0%";
+		document.getElementById('heading').style.top="25%";
+		
+		document.getElementById('paring').style.width="28%";
+		document.getElementById('paring').style.height="94%";
+		document.getElementById('paring').style.top="2%";
+		document.getElementById('paring').style.left="0%";
+		document.getElementById('paring').style.transition="0.8s";
+		}
+</script>
+</head>
+
+<body>
+
+<header>
+	<div class="header-wrap">
+	<a href=".\Home.html"><img src="Logo.jpeg" /></a>
+	<nav>
+		<ul class="left">
+			
+			<li class="shop"><a href="" >Shop</a>
+				<ul class="shopping" >
+					<li class="furniture" onmouseover="light()" onmouseleave="dark()"><a href="">Furniture</a>
+						<div class="front">
+							<div class="front-three">
+								<img src=".\Big_Images\Furniture_junction.jpg"/>
+							</div>
+							<div class="front-three">
+								<div class="front-one" onmouseover="one()" onmouseleave="defaults()"><a href="House.html">House</a></div>
+								<div class="front-one" onmouseover="two()" onmouseleave="defaults()"><a href="Bungalow.html">Bungalow</a></div>
+								<div class="front-one" onmouseover="three()" onmouseleave="defaults()"><a href="Flat.html">Flat</a></div>
+								<div class="front-one" onmouseover="four()" onmouseleave="defaults()"><a href="Office.html">Office</a></div>
+							</div>
+							<div class="front-three">
+								<img id="imagi"  src=".\Word.png" />
+							</div>
+						</div>
+					</li>
+					<li><a href=".\Alluminium.html">Alluminium</a></li>
+					<li><a href=".\PVC.html">PVC</a></li>
+					<li><a href="">Automation</a></li>
+				</ul>
+			</li>
+			<li><a href=".\AboutUs.html">Why Us</a></li>
+			<li><a href=".\Login.html">&nbsp&nbsp&nbsp&nbsp Login &nbsp&nbsp&nbsp&nbsp</a></li>
+			<li><a href=".\Contacting.html">Contact Us</a></li>
+		</ul>
+		<ul class="right">
+			<li><a href="" name="search"><i class="fa fa-search" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:32px;"></i></a></li>
+			<li><a href="" name="cart"><i class="fa fa-cart-arrow-down" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:36px;"></i></a></li>
+			<li><a href="" name="heart"><i class="fa fa-heart" style="background-color:rgb(41,45,49); color:red; font-size:21px;"></i></a></li>
+			<p name="sign-out">Sign Out</p>
+		</ul>
+	</nav>
+	</div>
+</header>
+
+<content>
+	<div class="No-wrap">
+		<div class="house-content-wrap" id="dull" >
+		<div id="h-h3"><h3  style="color:white; width:80%; margin:0px auto 25px;font-size:60px; padding:0px 0px 15px; border-bottom-color:white;font-family:courier; letter-spacing:2px;"><span style="color:white;">A &nbsp&nbsp </span>lluminium  &nbsp&nbsp<span style="color:white;">S&nbsp&nbsp</span>ection</h3></div>
+			<div class="no-wrap-image" onmouseleave="rightside()">
+				<img src="Allum1.jpg" alt=""   id="invisible"/>
+					<div class="partition" id="pari">
+						<h6 id="heads">Alluminium Profile</h6>
+						<span id="Hidden">Aluminium is remarkable for its low density and its ability to resist corrosion</span>
+					</div>
+					<p id="Display"> Aluminium is remarkable for its low density and its ability to resist corrosion
+					through the phenomenon of passivation. Aluminium and its alloys are vital to the aerospace industry
+					and important in transportation and building industries, such as building facades and window frames.
+					</br></br>
+					Aluminium is a silvery-white, lightweight metal. It is soft and malleable. Aluminium is used in a huge variety of products including cans, foils, kitchen utensils, window frames, beer kegs and aeroplane parts. This is because of its particular properties. The oxides and sulfates are the most useful compounds of aluminium.
+					</p>
+					<button onclick="leftside()" id="Button" >For Detail </br>Description </br>Click Here</br><i class="fa fa-arrow-left" style="opacity:1;"id="arrow"></i></button>
+				</img>
+			</div>
+			
+			<div class="no-wrap-image" onmouseleave="righter()">
+				<img src="Allum2.jpg" alt=""   id="invisibleing"/>
+					<div class="partition" id="paring">
+						<h6 id="heading">Alluminium Section</h6>
+						<span id="Hiddening">A material is pushed through a die of the desired cross-section.</span>
+					</div>
+					<p id="Displaying"> Extrusion is a process used to create objects of a fixed cross-sectional profile.
+					A material is pushed through a die of the desired cross-section. The two main advantages of this 
+					process over other manufacturing processes are its ability to create very complex cross-sections.
+					</br></br>
+					To work materials that are brittle, because the material only encounters compressive and shear stresses. It also forms parts with an excellent surface finish.
+					</p>
+					<button onclick="lefter()" id="Buttoning" >For Detail </br>Description </br>Click Here</br><i class="fa fa-arrow-left" style="opacity:1;"id="arrow"></i></button>
+				</img>
+			</div>
+		</div>
+	</div>
+</content>
+
+<footer>
+	<div class="triple">
+		<h3>CUSTOMER SUPPORT</h3>
+		<p>Let us help you find what you're looking for</p>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>HELP</span></a>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>FAQ</span></a>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>CONTACT</span></a>
+	</div>
+	
+	<div class="triple">
+		<h3>SIGN ME UP</h3>
+		<p>Join the EAGLE Nation</p>
+		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+				<div class="form-group">
+					<input type="email" placeholder="Email Address" name="mail">
+					<input type="submit" onmouseover="style='color:red;'" onmouseleave="style='color:white';">
+				</div>
+		</form>
+	</div>
+	
+	<div class="triple">
+		<h3>FOLLOW US</h3>
+		
+		<div class="triple-wrap">
+			<div class="five"><a href="https://www.facebook.com/roshan.jangid.963" class="fa fa-facebook"></a></div>
+			<div class="five"><a href="#" class="fa fa-skype"></a></div>
+			<div class="five"><a href="#" class="fa fa-instagram"></a></div>
+			<div class="five"><a href="#" class="fa fa-linkedin"></a></div>
+			<div class="five"><a href="https://twitter.com/RoshanJangid16" class="fa fa-twitter"></a></div>
+			<!--change from here<div class="five"><a href=""><img src=".\Images\fb.png" alt="facebook"/></a></div>-->
+			
+		</div>
+	</div>
+	
+</footer>
+</body>
+</html>

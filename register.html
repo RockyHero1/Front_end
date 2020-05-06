@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Registration</title>
+	<link href="register.css" rel="stylesheet" type='text/css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script>
+		function p(){
+			var x=document.getElementById("change");
+			var z=document.getElementById("eye");
+			
+				if(x.type === "password" || z.src ==="Cut_eye.png")
+				{
+					x.type="text";
+					z.src="Eye.png"
+				}
+				else
+				{
+					x.type="password";
+					z.src="Cut_eye.png";
+				}
+			}
+		function vale()
+		{
+			var m=document.forms["myForm"]["Mob"].value;
+				if(isNaN(m) || m<1000000000 || m>9999999999 )
+				{ 	
+					alert("Mobile no. is incorrect or not filled out");
+					return false;
+				}
+		}
+		function passcode(){
+			/*var f=document.forms["myForm"]["Fname"].value;
+				if(f="" || !isNaN(f))
+					alert("*/
+			var y=document.getElementById("change");
+				if(y.length()<=6)
+				{
+					alert("Enter password of length more than 6");
+					return false;
+				}
+			
+			}
+	function one(){
+		document.getElementById('imagi').src="House.jpg";
+		}
+	function two(){
+		document.getElementById('imagi').src="Banglow.png";
+		}
+	function three(){
+		document.getElementById('imagi').src="Flat.jpg";
+		}
+	function four(){
+		document.getElementById('imagi').src="Office.jpg";
+		}
+	function defaults(){
+		document.getElementById('imagi').src="Word.png";
+		}
+	function light(){
+		document.getElementById('dull').style.opacity="0";
+		}
+	function dark(){
+		document.getElementById('dull').style.opacity="1";
+	}
+</script>
+	
+<style>
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:30px;
+  background-color:#777;
+  color:white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+	<div class="header-wrap">
+	<a href="Home.html"><img src="Logo.jpeg" /></a>
+	<nav>
+		<ul class="left">
+			
+			<li class="shop"><a href="" >Shop</a>
+				<ul class="shopping" onmouseover="light()" onmouseleave="dark()">
+					<li class="furniture"><a href="">Furniture</a>
+						<div class="front">
+							<div class="front-three" >
+								<img src="Big_Images\Furniture_junction.jpg" style="width:90%; height:21.5em; margin:1.5em; padding:0px;"/>
+							</div>
+							<div class="front-three">
+								<div class="front-one" onmouseover="one()" onmouseleave="defaults()"><a href="House.html">House</a></div>
+								<div class="front-one" onmouseover="two()" onmouseleave="defaults()"><a href="Bungalow.html">Bungalow</a></div>
+								<div class="front-one" onmouseover="three()" onmouseleave="defaults()"><a href="Flat.html">Flat</a></div>
+								<div class="front-one" onmouseover="four()" onmouseleave="defaults()"><a href="Office.html">Office</a></div>
+							</div>
+							<div class="front-three">
+								<img id="imagi"  src="Word.png" style="widht:80%; margin:1.5em; padding:0em; height:21.5em;"/>
+							</div>
+						</div>
+					</li>
+					<li><a href="Alluminium.html">Alluminium</a></li>
+					<li><a href="PVC.html">PVC</a></li>
+					<li><a href="">Automation</a></li>
+				</ul>
+			</li>
+			<li><a href="AboutUs.html">Why Us</a></li>
+			<li><a href="Login.html">&nbsp&nbsp&nbsp&nbsp Login &nbsp&nbsp&nbsp&nbsp</a></li>
+			<li><a href="Contacting.html">Contact Us</a></li>
+		</ul>
+		<ul class="right">
+			<li><a href="" name="search"><i class="fa fa-search" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:32px;"></i></a></li>
+			<li><a href="" name="cart"><i class="fa fa-cart-arrow-down" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:36px;"></i></a></li>
+			<li><a href="" name="heart"><i class="fa fa-heart" style="background-color:rgb(41,45,49); color:red; font-size:21px;"></i></a></li>
+			<p name="sign-out">Sign Out</p>
+		</ul>
+	</nav>
+	</div>
+</header>
+
+<content>
+	<div class="body-wrap">
+		<div class="box" id="dull">
+			
+			<div class="left">
+				<img src="furnitura.jpg" alt="picture"/>
+			</div>
+			
+			<div class="right">
+				<div class="right-wrap">
+					<h1>Registration Form</h1>
+					
+					<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+						<div class="form-first">
+							<input type="text" placeholder="First Name" name="Fname" class="form-control" required >
+							<input type="text" placeholder="Last Name" name="Lname" class="form-control" required>
+						</div>
+						<div class="form-wrapper">
+							<input type="text" placeholder="Username" name="Uname" class="form-control" required>
+							<img src="user.jpg" alt="user"></img>
+						</div>
+						
+						<div class="form-wrapper">
+							<input type="text" placeholder="Mob.No" name="Mob" class="form-control" onblur="vale()" required>
+							<img src="mob.jpg" alt="Mobile"></img>
+						</div>
+						
+						<div class="form-wrapper">
+							<input type="email" placeholder="Email Address" name="Email" class="form-control">
+							<img src="mail.jpg" alt="Mail"></img>
+						</div>
+						<div class="form-wrapper">
+							<select name="" id="" class="form-control">
+								<option value="" disabled selected required>Gender</option>
+								<option value="male">Male</option>
+								<option value="femal">Female</option>
+								<option value="other">Other</option>
+							</select>
+							<img src="" alt=""></img>
+						</div>
+						
+						<div class="form-wrapper" >
+							<input type="date" class="form-control" name="Bdate" required></input>
+							<img src="cake.png" alt="Cake"></img>
+						</div>
+						<div class="form-wrapper">
+							<input type="password" placeholder="Password" class="form-control" id="change" onblur="passcode()" name="Password" required>
+							<img src="Cut_eye.png" alt="Lock" onclick="p()" id="eye" ></img>
+						</div>
+						
+						<button type="submit" name="submit"><span>Register</span></button></br>
+						
+						<div class="or" >
+							<img src="Images\or.png" alt="OR"/></br></br>
+							<span>Sign up using</span></br>
+						</div>
+						
+						<div class="part">
+								<a href="https://www.facebook.com/roshan.jangid.963" target="_blank" class="fa fa-facebook" style="background-color:black; margin-right:20px;"></a>
+								<a href="#" class="fa fa-google" style="background-color:black; margin-right:20px;"></a>
+								<a href="https://twitter.com/RoshanJangid16" target="_blank" class="fa fa-twitter" style="background-color:black; "></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</content>
+
+<footer>
+	<div class="triple">
+		<h3>CUSTOMER SUPPORT</h3>
+		<p>Let us help you find what you're looking for</p>
+		<a href="Contacting.html" style="text-decoration:none;"><span>HELP</span></a>
+		<a href="Contacting.html" style="text-decoration:none;"><span>FAQ</span></a>
+		<a href="Contacting.html" style="text-decoration:none;"><span>CONTACT</span></a>
+	</div>
+	
+	<div class="triple">
+		<h3>SIGN ME UP</h3>
+		<p>Join the EAGLE Nation</p>
+		<form action="/action_page.php" method="post">
+				<div class="form-groups">
+					<input type="email" placeholder="Email Address" name="mail">
+					<input type="submit" onmouseover="style='color:red;'" onmouseleave="style='color:white';">
+				</div>
+		</form>
+	</div>
+	
+	<div class="triple">
+		<h3>FOLLOW US</h3>
+		
+		<div class="triple-wrap">
+			<div class="five"><a href="https://www.facebook.com/roshan.jangid.963" class="fa fa-facebook"></a></div>
+			<div class="five"><a href="#" class="fa fa-skype"></a></div>
+			<div class="five"><a href="#" class="fa fa-instagram"></a></div>
+			<div class="five"><a href="#" class="fa fa-linkedin"></a></div>
+			<div class="five"><a href="https://twitter.com/RoshanJangid16" class="fa fa-twitter"></a></div>
+			<!--change from here<div class="five"><a href=""><img src="Images\fb.png" alt="facebook"/></a></div>-->
+			
+		</div>
+	</div>
+	
+</footer>
+</body>
+</html>

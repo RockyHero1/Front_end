@@ -1,0 +1,129 @@
+<?php 
+
+	session_start();
+	$Fname=$_POST['Fname'];
+	$Email=$_POST['Email'];
+	$Gender=$_POST['Gender'];
+	$Bdate=$_POST['Bdate'];
+	$Password=$_POST['Password'];
+	
+	$con=mysqli_connect('localhost','root');
+	mysqli_select_db($con,'test');
+	
+	$Time=date("h:i:sa");
+	$q="insert into details(Fname,Email,Gender,Bdate,Password) values ('$Fname','$Email', '$Gender', '$Bdate', '$Password', '$Time')";
+	$result=mysqli_query($con,$q);
+	$num=mysqli_num_rows($result);
+	
+	if($num==1)
+	{
+		$SESSION['Fname']=$Fname;
+		header('Signing/Housy.php');
+	}
+	else{
+		header('Signing/Signup.php');
+	}
+	
+	mysqli_query($con,$q);
+	mysqli_close($con);
+	
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>SignUp_Page</title>
+	<link href="Signup.css" rel="stylesheet" type='text/css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script>
+		function p(){
+			var x=document.getElementById("change");
+			var z=document.getElementById("eye");
+			
+				if(x.type === "password" || z.src ==="Cut_eye.png")
+				{
+					x.type="text";
+					z.src="Eye.png"
+				}
+				else
+				{
+					x.type="password";
+					z.src="Cut_eye.png";
+				}
+			}
+
+		function passcode(){
+			/*var f=document.forms["myForm"]["Fname"].value;
+				if(f="" || !isNaN(f))
+					alert("*/
+			var y=document.getElementById("change");
+				if(y.length()<=6)
+				{
+					alert("Enter password of length more than 6");
+					return false;
+				}
+			
+			}
+</script>
+	
+</head>
+
+<body>
+
+<content>
+	<div class="body-wrap">
+		<div class="box" id="dull">
+			
+			<div class="left">
+				<img src="Olcademy.png" alt="picture"/>
+			</div>
+			
+			<div class="right">
+				<div class="right-wrap">
+					<h1>SignUp_Page</h1>
+					
+					<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+						
+						<div class="form-wrapper">
+							<input type="text" placeholder="Full Name" name="Fname" class="form-control" required>
+							<img src="user.jpg" alt="user"></img>
+						</div>
+					
+						<div class="form-wrapper">
+							<input type="email" placeholder="Email Address" name="Email" class="form-control">
+							<img src="mail.jpg" alt="Mail"></img>
+						</div>
+						<div class="form-wrapper">
+							<select name="Gender" id="" class="form-control">
+								<option value="" disabled selected required>Gender</option>
+								<option value="male">Male</option>
+								<option value="femal">Female</option>
+								<option value="other">Other</option>
+							</select>
+							<img src="" alt=""></img>
+						</div>
+						
+						<div class="form-wrapper" >
+							<input type="date" class="form-control" name="Bdate" required></input>
+							<img src="cake.png" alt="Cake"></img>
+						</div>
+						<div class="form-wrapper">
+							<input type="password" placeholder="Password" class="form-control" id="change" onblur="passcode()" name="Password" required>
+							<img src="Cut_eye.png" alt="Lock" onclick="p()" id="eye" ></img>
+						</div>
+						
+						<button type="submit" name="submit"><span>Sign_UP</span></button></br>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</content>
+
+</body>
+</html>

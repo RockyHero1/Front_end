@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>About Us</title>
+	<link href="home.css" rel="stylesheet" type='text/css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:30px;
+  background-color:#777;
+  color:white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+</style>
+<script>
+	function one(){
+		document.getElementById('imagi').src="House.jpg";
+		}
+	function two(){
+		document.getElementById('imagi').src="Banglow.png";
+		}
+	function three(){
+		document.getElementById('imagi').src="Flat.jpg";
+		}
+	function four(){
+		document.getElementById('imagi').src="Office.jpg";
+		}
+	function defaults(){
+		document.getElementById('imagi').src="Word.png";
+		}
+	function light(){
+		document.getElementById('dull').style.opacity="0.3";
+		document.getElementById('dull').style.transition="0.6s";
+		}
+	function dark(){
+		document.getElementById('dull').style.opacity="1";
+	}
+</script>
+
+</head>
+<body>
+<div class="grey">
+<header>
+	<div class="header-wrap">
+	<a href=".\Home.html"><img src=".\Logo.jpeg" /></a>
+	<nav>
+		<ul class="left">
+			
+			<li class="shop"><a href="" >Shop</a>
+				<ul class="shopping" onmouseover="light()" onmouseleave="dark()">
+					<li class="furniture"><a href="">Furniture</a>
+						<div class="front">
+							<div class="front-three">
+								<img src=".\Big_Images\Furniture_junction.jpg"/>
+							</div>
+							<div class="front-three">
+								<div class="front-one" onmouseover="one()" onmouseleave="defaults()"><a href=".\House.html">House</a></div>
+								<div class="front-one" onmouseover="two()" onmouseleave="defaults()"><a href=".\Bungalow.html">Bungalow</a></div>
+								<div class="front-one" onmouseover="three()" onmouseleave="defaults()"><a href=".\Flat.html">Flat</a></div>
+								<div class="front-one" onmouseover="four()" onmouseleave="defaults()"><a href=".\Office.html">Office</a></div>
+							</div>
+							<div class="front-three">
+								<img id="imagi"  src=".\Word.png" />
+							</div>
+						</div>
+					</li>
+					<li><a href=".\Alluminium.html">Alluminium</a></li>
+					<li><a href=".\PVC.html">PVC</a></li>
+					<li><a href="">Automation</a></li>
+				</ul>
+			</li>
+			<li><a href=".\AboutUs.html">Why Us</a></li>
+			<li><a href=".\Login.html">&nbsp&nbsp&nbsp&nbsp Login &nbsp&nbsp&nbsp&nbsp</a></li>
+			<li><a href=".\Contacting.html">Contact Us</a></li>
+		</ul>
+		<ul class="right">
+			<li><a href="" name="search"><i class="fa fa-search" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:32px;"></i></a></li>
+			<li><a href="" name="cart"><i class="fa fa-cart-arrow-down" style="background-color:rgb(41,45,49); color:#fff; margin-right:-20px; font-size:36px;"></i></a></li>
+			<li><a href="" name="heart"><i class="fa fa-heart" style="background-color:rgb(41,45,49); color:red; font-size:21px;"></i></a></li>
+			<p name="sign-out" style="top:23%; right:2%;">Sign Out</p>
+		</ul>
+	</nav>
+	</div>
+</header>
+
+	<div class="body-wrap">
+		<h2 id="ah2">Our Stories</h2>
+		<p id="a_first">In 2019 Eagle was founded with a simple mission: </br>build the designs you’d use every day if it existed.</p>
+		<img src=".\Big_Images\About_us.jpg" id="dull"/>
+		
+		<div class="contents-wrap">
+			<p>Growing up, my friend and I always had a passion for the designing. All new Furnished Furniture, Alluminium, PVC to interior designing shows with our teacher-turned-entrepreneur-father. We were raised with an appreciation for unique, lastest , and high-quality gear.</p>
+			<p>But the designs available at the time just weren’t up to our well settled uniqueness – the handles would break, the latches would snap off, and the lids would cave in. 	Not only was it a hassle to replace our design after every year, but also these cheaply built, ordinary ice chests were limiting our good times. And that frustration led us to a solution.</p>
+		</div>
+		
+		<div class="images"><img src=".\Big_Images\About_left.jpg"/></div>
+		<div class="images"><img src=".\Big_Images\About_right.jpg"/></div>
+		
+		<div class="contents-wrap">
+			<p>In 2019, we founded Eagle with a simple mission: build the design we’d use every day if it existed. One that was built for the extreme design's enthusiast rather than for the mass-discount retailers. One that could take the abuse we knew we’d put it through out in the field and on the water. One that simply wouldn’t break.</p>
+			<p> We decided early on that product innovation would come from necessity and firsthand experience – not from market research and data analysis. Today, Eagle products perform when it matters most.</p>
+		</div>
+		<div id="last_pic" ><img src=".\Big_Images\About_rocky.jpg"/></div>
+		
+		<div id="ah4"><h4>"EAGLE REPRESENTS THE UNIQUENESS </br>BY WHICH ALL OTHER DESIGNING</br> PRODUCTS ARE MEASURED."</h4>
+			<p>EAGLE Interior Ambassador</p>
+		</div>
+	</div>
+	
+<footer>
+	<div class="triple">
+		<h3>CUSTOMER SUPPORT</h3>
+		<p>Let us help you find what you're looking for</p>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>HELP</span></a>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>FAQ</span></a>
+		<a href=".\Contacting.html" style="text-decoration:none;"><span>CONTACT</span></a>
+	</div>
+	
+	<div class="triple">
+		<h3>SIGN ME UP</h3>
+		<p>Join the EAGLE Nation</p>
+		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+				<div class="form-group">
+					<input type="email" placeholder="Email Address" name="mail">
+					<input type="submit" onmouseover="style='color:red;'" onmouseleave="style='color:white';">
+				</div>
+		</form>
+	</div>
+	
+	<div class="triple">
+		<h3>FOLLOW US</h3>
+		
+		<div class="triple-wrap">
+			<div class="five"><a href="#" class="fa fa-facebook"></a></div>
+			<div class="five"><a href="#" class="fa fa-google"></a></div>
+			<div class="five"><a href="#" class="fa fa-instagram"></a></div>
+			<div class="five"><a href="#" class="fa fa-linkedin"></a></div>
+			<div class="five"><a href="#" class="fa fa-twitter"></a></div>
+			<!--change from here<div class="five"><a href=""><img src=".\Images\fb.png" alt="facebook"/></a></div>-->
+			
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>
+		
